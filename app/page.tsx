@@ -1,7 +1,4 @@
-import Image from "next/image";
-import Portfolio from './page.jsx'
+import Portfolio from "./pagee.jsx";
 export default function Home() {
-  return (
-    <Portfolio/>
-  );
+  return <Portfolio />;
 }
