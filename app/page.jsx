@@ -5,6 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
+
 import {
   Menu,
   X,
