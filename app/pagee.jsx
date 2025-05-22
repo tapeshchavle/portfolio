@@ -307,32 +307,41 @@ export default function Portfolio() {
                 demo: "https://todesktopapp.netlify.app/",
               },
               {
-                title: "Weather Dashboard",
+                title: "Gadgethub",
                 description:
-                  "Real-time weather information with forecasts and historical data.",
-                image: "/placeholder.svg?height=400&width=600",
-                tags: ["JavaScript", "API Integration", "Chart.js"],
+                  "This is E-Commerce application like amazon and flipkart where customer can purchase any items online",
+                image: "/gadgethub.png?height=400&width=600",
+                tags: ["java (JSE)", "JEE", "BootStrap","JSP","Servlet","Oracle Database"],
                 github: "#",
                 demo: "#",
               },
               {
-                title: "Social Media Dashboard",
+                title: "TechBlog",
                 description:
-                  "Analytics dashboard for tracking social media performance.",
-                image: "/placeholder.svg?height=400&width=600",
-                tags: ["React", "D3.js", "REST API"],
-                github: "#",
+                  "TechBlog is a dynamic web application built to serve as a platform for tech enthusiasts to share, explore, and comment on various technology-related articles",
+                image: "/techblog.png?height=400&width=600",
+                tags: ["Java (JSE)", "JEE", "BootStrap","JSP","Servlet","MySql"],
+                github: "https://github.com/tapeshchavle/TechBlog",
                 demo: "#",
               },
               {
-                title: "Recipe Finder",
+                title: "Resume Skills Matchers",
                 description:
-                  "Search and discover recipes based on ingredients and dietary preferences.",
-                image: "/placeholder.svg?height=400&width=600",
-                tags: ["React", "API Integration", "Responsive Design"],
-                github: "#",
+                  "This is java based application which extracts the skills and other relavent data from the resume or text file.I uses OpenNLP ,PdfBox ,Apache POI library for extracting the data from resume or text file.",
+                image: "/resume-data.png?height=400&width=600",
+                tags: ["JEE", "OpenNLP", "Java 8","PdfBox","Tailwind"],
+                github: "https://github.com/tapeshchavle/ResumeDataExtractor",
                 demo: "#",
               },
+              {
+                title: "Chat Application",
+                description:
+                  "This is real time chat application like Whatsapp",
+                image: "/chat.png?height=400&width=600",
+                tags: ["Java", "SpringBoot", "Socketio",],
+                github: "#",
+                demo: "#",
+              }
             ].map((project, index) => (
               <div
                 key={index}
@@ -451,7 +460,7 @@ export default function Portfolio() {
                         href="https://mail.google.com/mail/u/0/#inbox?compose=new"
                         className="text-muted-foreground"
                       >
-                        https://mail.google.com
+                        tapeshchawle@gmail.com
                       </a>
                     </div>
                   </div>
@@ -463,7 +472,7 @@ export default function Portfolio() {
                         href="https://www.linkedin.com/in/tapesh-chavle-48656b23a/"
                         className="text-muted-foreground"
                       >
-                        https://www.linkedin.com
+                        https://www.linkedin.com/in/tapesh-chavle-48656b23a/
                       </a>
                     </div>
                   </div>
