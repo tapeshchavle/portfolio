@@ -5,7 +5,6 @@ import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
-
 import {
   Menu,
   X,
@@ -269,35 +268,43 @@ export default function Portfolio() {
       {/* Projects Section */}
       <section id="projects" className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">My Projects</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            ✨ My Projects
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "E-Commerce Platform",
+                title: "Foodingo",
                 description:
-                  "A full-featured online store with product catalog, cart, and checkout functionality.",
-                image: "/placeholder.svg?height=400&width=600",
-                tags: ["React", "Node.js", "MongoDB"],
-                github: "#",
-                demo: "#",
+                  "Foodingo is a full-featured food delivery and restaurant discovery web application inspired by Zomato.",
+                image: "/foodingo.png?height=400&width=600",
+                tags: [
+                  "React",
+                  "SpringBoot",
+                  "MongoDB",
+                  "Tailwind",
+                  "RazorPay",
+                ],
+                github: "https://github.com/tapeshchavle/foodingo",
+                demo: "https://foodingo.netlify.app/",
               },
               {
-                title: "Portfolio Website",
+                title: "Background Remover",
                 description:
-                  "A responsive portfolio website showcasing projects and skills.",
-                image: "/placeholder.svg?height=400&width=600",
-                tags: ["React", "Tailwind CSS", "Next.js"],
-                github: "#",
-                demo: "#",
+                  "BG Remover SaaS-Based Background Removal Tool (Under Development) BG Remover is a cloud-based SaaS application designed to automatically remove image backgrounds with precision and speed",
+                image: "/bg-remover.png?height=400&width=600",
+                tags: ["React", "Spring Boot", "Clerk", "MySql", "Tailwind"],
+                github: "https://github.com/tapeshchavle/background-remover",
+                demo: "https://backg-remover.netlify.app/",
               },
               {
-                title: "Task Management App",
+                title: "ToDesktop",
                 description:
-                  "A productivity app for managing tasks, projects, and deadlines.",
-                image: "/placeholder.svg?height=400&width=600",
-                tags: ["React", "Firebase", "Redux"],
-                github: "#",
-                demo: "#",
+                  "A modern website which is based on tailwind and modern amimation",
+                image: "/todesktop.png?height=400&width=600",
+                tags: ["Tailwind", "JavaScript", "HTML", "Css"],
+                github: "https://github.com/tapeshchavle/ToDesktop.com",
+                demo: "https://todesktopapp.netlify.app/",
               },
               {
                 title: "Weather Dashboard",
@@ -440,27 +447,36 @@ export default function Portfolio() {
                     <Mail className="w-5 h-5 mr-3 mt-1 text-primary" />
                     <div>
                       <h4 className="font-medium">Email</h4>
-                      <p className="text-muted-foreground">
-                        your.email@example.com
-                      </p>
+                      <a
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                        className="text-muted-foreground"
+                      >
+                        https://mail.google.com
+                      </a>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <Linkedin className="w-5 h-5 mr-3 mt-1 text-primary" />
                     <div>
                       <h4 className="font-medium">LinkedIn</h4>
-                      <p className="text-muted-foreground">
-                        linkedin.com/in/yourprofile
-                      </p>
+                      <a
+                        href="https://www.linkedin.com/in/tapesh-chavle-48656b23a/"
+                        className="text-muted-foreground"
+                      >
+                        https://www.linkedin.com
+                      </a>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <GitHub className="w-5 h-5 mr-3 mt-1 text-primary" />
                     <div>
                       <h4 className="font-medium">GitHub</h4>
-                      <p className="text-muted-foreground">
-                        github.com/yourusername
-                      </p>
+                      <a
+                        href="https://github.com/tapeshchavle"
+                        className="text-muted-foreground"
+                      >
+                        https://github.com/tapeshchavle
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -468,19 +484,19 @@ export default function Portfolio() {
                   <h4 className="font-medium mb-4">Follow Me</h4>
                   <div className="flex gap-4">
                     <a
-                      href="#"
+                      href="https://github.com/tapeshchavle"
                       className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
                     >
                       <GitHub size={20} />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/tapesh-chavle-48656b23a/"
                       className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
                     >
                       <Linkedin size={20} />
                     </a>
                     <a
-                      href="#"
+                      href="https://mail.google.com/mail/u/0/#inbox?compose=new"
                       className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
                     >
                       <Mail size={20} />
@@ -497,7 +513,7 @@ export default function Portfolio() {
       <footer className="py-8 border-t">
         <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Tapesh Chavle. All rights reserved.
           </p>
         </div>
       </footer>
