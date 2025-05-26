@@ -35,7 +35,7 @@ export default function Portfolio() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <a href="#" className="text-xl font-bold">
-            Portfolio
+            Tapesh Chavle
           </a>
 
           {/* Desktop Navigation */}
@@ -145,7 +145,7 @@ export default function Portfolio() {
             <div className="w-full md:w-1/3">
               <div className="aspect-square rounded-full overflow-hidden bg-muted">
                 <img
-                  src="tapesh.jpg"
+                  src="profile.jpg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
@@ -311,7 +311,14 @@ export default function Portfolio() {
                 description:
                   "This is E-Commerce application like amazon and flipkart where customer can purchase any items online",
                 image: "/gadgethub.png?height=400&width=600",
-                tags: ["java (JSE)", "JEE", "BootStrap","JSP","Servlet","Oracle Database"],
+                tags: [
+                  "java (JSE)",
+                  "JEE",
+                  "BootStrap",
+                  "JSP",
+                  "Servlet",
+                  "Oracle Database",
+                ],
                 github: "#",
                 demo: "#",
               },
@@ -320,7 +327,14 @@ export default function Portfolio() {
                 description:
                   "TechBlog is a dynamic web application built to serve as a platform for tech enthusiasts to share, explore, and comment on various technology-related articles",
                 image: "/techblog.png?height=400&width=600",
-                tags: ["Java (JSE)", "JEE", "BootStrap","JSP","Servlet","MySql"],
+                tags: [
+                  "Java (JSE)",
+                  "JEE",
+                  "BootStrap",
+                  "JSP",
+                  "Servlet",
+                  "MySql",
+                ],
                 github: "https://github.com/tapeshchavle/TechBlog",
                 demo: "#",
               },
@@ -329,19 +343,18 @@ export default function Portfolio() {
                 description:
                   "This is java based application which extracts the skills and other relavent data from the resume or text file.I uses OpenNLP ,PdfBox ,Apache POI library for extracting the data from resume or text file.",
                 image: "/resume-data.png?height=400&width=600",
-                tags: ["JEE", "OpenNLP", "Java 8","PdfBox","Tailwind"],
+                tags: ["JEE", "OpenNLP", "Java 8", "PdfBox", "Tailwind"],
                 github: "https://github.com/tapeshchavle/ResumeDataExtractor",
                 demo: "#",
               },
               {
                 title: "Chat Application",
-                description:
-                  "This is real time chat application like Whatsapp",
+                description: "This is real time chat application like Whatsapp",
                 image: "/chat.png?height=400&width=600",
-                tags: ["Java", "SpringBoot", "Socketio",],
+                tags: ["Java", "SpringBoot", "Socketio"],
                 github: "#",
                 demo: "#",
-              }
+              },
             ].map((project, index) => (
               <div
                 key={index}
