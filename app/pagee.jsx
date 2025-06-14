@@ -538,7 +538,7 @@ export default function Portfolio() {
   className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
 >
   <img
-    src="https://media.geeksforgeeks.org/wp-content/uploads/20221212180632/gfg.png"
+    src="https://iconduck.com/icons/80486/geeksforgeeks.svg"
     alt="GeeksforGeeks"
     className="w-5 h-5"
   />
