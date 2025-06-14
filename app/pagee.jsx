@@ -533,6 +533,17 @@ export default function Portfolio() {
     className="w-5 h-5"
   />
 </a>
+                    <a
+  href="https://www.geeksforgeeks.org/user/tapeshc7nep/"
+  className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+>
+  <img
+    src="https://media.geeksforgeeks.org/wp-content/uploads/20221212180632/gfg.png"
+    alt="GeeksforGeeks"
+    className="w-5 h-5"
+  />
+</a>
+
 
                   </div>
                 </div>
