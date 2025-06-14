@@ -523,6 +523,17 @@ export default function Portfolio() {
                     >
                       <Mail size={20} />
                     </a>
+                    <a
+  href="https://leetcode.com/tapeshchavle/"
+  className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+    alt="LeetCode"
+    className="w-5 h-5"
+  />
+</a>
+
                   </div>
                 </div>
               </div>
