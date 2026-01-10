@@ -24,7 +24,7 @@ export function GlitchText({
     const [isGlitching, setIsGlitching] = useState(false);
     const [hasRevealed, setHasRevealed] = useState(false);
     const intervalRef = useRef<NodeJS.Timeout | null>(null);
-    const revealRef = useRef<NodeJS.Timeout | null>(null);
+
 
     useEffect(() => {
         // Initial delay before starting the reveal
@@ -59,7 +59,7 @@ export function GlitchText({
         return () => {
             clearTimeout(startTimeout);
             if (intervalRef.current) clearInterval(intervalRef.current);
-            if (revealRef.current) clearTimeout(revealRef.current);
+
         };
     }, [text, delay]);
 

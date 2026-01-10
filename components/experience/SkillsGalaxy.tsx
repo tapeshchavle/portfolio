@@ -77,11 +77,9 @@ function GraphEdge({ edge, isHighlighted, activeNode }: {
     isHighlighted: boolean;
     activeNode: string | null;
 }) {
-    const fromSkill = skills.find(s => s.id === edge.from);
-    const toSkill = skills.find(s => s.id === edge.to);
 
-    const fromColor = fromSkill ? categoryColors[fromSkill.category].primary : "#00ff88";
-    const toColor = toSkill ? categoryColors[toSkill.category].primary : "#00ff88";
+
+
 
     const isConnectedToActive = activeNode === edge.from || activeNode === edge.to;
 

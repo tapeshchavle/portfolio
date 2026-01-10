@@ -63,8 +63,8 @@ export default function VoidExperience() {
             className="group flex items-center gap-3"
           >
             <div className={`w-1 h-1 rounded-full transition-all ${phase === (i === 0 ? "breach" : i === 1 ? "signal" : i === 2 ? "memory" : i === 3 ? "scan" : "terminal")
-                ? "w-4 bg-[#00ff88]"
-                : "bg-[#00ff88]/30 group-hover:bg-[#00ff88]/60"
+              ? "w-4 bg-[#00ff88]"
+              : "bg-[#00ff88]/30 group-hover:bg-[#00ff88]/60"
               }`} />
             <span className="text-[10px] font-mono text-[#00ff88]/0 group-hover:text-[#00ff88]/60 transition-all uppercase tracking-widest">
               {section}
