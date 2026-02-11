@@ -122,13 +122,15 @@ export interface Experience {
     description: string;
     achievements: string[];
     techStack: string[];
+    projectUrl?: string;
+    projectName?: string;
 }
 
 export const experiences: Experience[] = [
     {
         id: "exp-1",
         role: "Java Spring Boot Backend Developer Intern",
-        company: "Stealth Startup", // Inferred, user didn't specify
+        company: "Vidyayatan Technologies LLP", // Inferred, user didn't specify
         period: "July 2025 - Feb 2026",
         duration: "8 Months",
         description: "Implemented workflow automation and backend systems from scratch using Spring Boot and Microservices architecture.",
@@ -139,7 +141,9 @@ export const experiences: Experience[] = [
             "Optimized data storage and retrieval using Redis caching and PostgreSQL",
             "Designed and implemented complex workflow automation logic"
         ],
-        techStack: ["Java", "Spring Boot", "Redis", "Kafka", "PostgreSQL", "WATI", "COMBOT"]
+        techStack: ["Java", "Spring Boot", "Redis", "Kafka", "PostgreSQL", "WATI", "COMBOT"],
+        projectName: "Vacademy",
+        projectUrl: "https://vacademy.io" // Replace with your live project link
     }
 ];
 

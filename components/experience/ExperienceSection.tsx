@@ -106,6 +106,21 @@ export function ExperienceSection() {
                                             </span>
                                         ))}
                                     </div>
+
+                                    {/* Project Link */}
+                                    {exp.projectUrl && (
+                                        <div className="mt-6 pt-6 border-t border-[#00ff88]/10">
+                                            <a
+                                                href={exp.projectUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-2 text-sm font-mono text-[#00ff88] hover:text-white transition-colors group/link"
+                                            >
+                                                <span>Live Project</span>
+                                                <span className="group-hover/link:translate-x-1 transition-transform">→</span>
+                                            </a>
+                                        </div>
+                                    )}
                                 </div>
 
                                 {/* Hover Glow */}
