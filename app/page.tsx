@@ -9,6 +9,7 @@ import { VoidCursor } from "@/components/ui/VoidCursor";
 import { HeroSection } from "@/components/experience/HeroSection";
 import { AboutFragment } from "@/components/experience/AboutFragment";
 import { ProjectHologram } from "@/components/experience/ProjectHologram";
+import { ExperienceSection } from "@/components/experience/ExperienceSection";
 import { SkillsGalaxy } from "@/components/experience/SkillsGalaxy";
 import { TerminalContact } from "@/components/experience/TerminalContact";
 import { useVoidStore } from "@/lib/store";
@@ -54,7 +55,7 @@ export default function VoidExperience() {
 
       {/* Navigation hint */}
       <nav className="fixed top-6 left-6 z-50 hidden lg:flex flex-col gap-2">
-        {["hero", "about", "projects", "skills", "contact"].map((section, i) => (
+        {["hero", "about", "projects", "experience", "skills", "contact"].map((section, i) => (
           <button
             key={section}
             onClick={() => {
@@ -62,7 +63,7 @@ export default function VoidExperience() {
             }}
             className="group flex items-center gap-3"
           >
-            <div className={`w-1 h-1 rounded-full transition-all ${phase === (i === 0 ? "breach" : i === 1 ? "signal" : i === 2 ? "memory" : i === 3 ? "scan" : "terminal")
+            <div className={`w-1 h-1 rounded-full transition-all ${phase === (i === 0 ? "breach" : i === 1 ? "signal" : i === 2 ? "memory" : i === 3 ? "logs" : i === 4 ? "scan" : "terminal")
               ? "w-4 bg-[#00ff88]"
               : "bg-[#00ff88]/30 group-hover:bg-[#00ff88]/60"
               }`} />
@@ -88,6 +89,11 @@ export default function VoidExperience() {
         {/* Projects */}
         <div id="projects">
           <ProjectHologram />
+        </div>
+
+        {/* Experience */}
+        <div id="experience">
+          <ExperienceSection />
         </div>
 
         {/* Skills */}

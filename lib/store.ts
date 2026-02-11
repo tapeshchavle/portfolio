@@ -2,7 +2,7 @@
 
 import { create } from "zustand";
 
-export type Phase = "breach" | "signal" | "memory" | "scan" | "terminal";
+export type Phase = "breach" | "signal" | "memory" | "logs" | "scan" | "terminal";
 
 interface CursorState {
   x: number;
@@ -46,9 +46,10 @@ interface VoidState {
 
 const getPhaseFromProgress = (progress: number): Phase => {
   if (progress < 0.1) return "breach";
-  if (progress < 0.3) return "signal";
-  if (progress < 0.6) return "memory";
-  if (progress < 0.8) return "scan";
+  if (progress < 0.25) return "signal";
+  if (progress < 0.5) return "memory";
+  if (progress < 0.7) return "logs";
+  if (progress < 0.85) return "scan";
   return "terminal";
 };
 

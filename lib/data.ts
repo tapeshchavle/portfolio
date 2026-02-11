@@ -8,7 +8,7 @@ export const personalInfo = {
     leetcode: "https://leetcode.com/tapeshchavle/",
     gfg: "https://www.geeksforgeeks.org/user/tapeshc7nep/",
     resumeUrl: "/resume.pdf",
-    bio: `I'm a dedicated Full Stack Java Developer with a strong focus on building scalable and efficient web applications using Spring Boot. Currently pursuing my B.Tech and in my 3rd year, I have hands-on experience delivering real-world projects.`,
+    bio: `I'm a dedicated Full Stack Java Developer with a strong focus on building scalable and efficient web applications using Spring Boot. Currently pursuing my B.Tech and in my 4th year, I have hands-on experience delivering real-world projects.`,
 };
 
 export interface Project {
@@ -29,9 +29,20 @@ export const projects: Project[] = [
         description:
             "Full-featured food delivery and restaurant discovery web application inspired by Zomato. Real-time order tracking, payment integration, and restaurant management.",
         image: "/foodingo.png",
-        tags: ["React", "Spring Boot", "MongoDB", "Tailwind", "RazorPay"],
+        tags: ["React", "Spring Boot", "MongoDB", "Tailwind", "RazorPay", "JWT", "Shadcn"],
         github: "https://github.com/tapeshchavle/foodingo",
-        demo: "https://foodingo.netlify.app/",
+        demo: "https://foodingo.tapesh.me/",
+        featured: true,
+    },
+    {
+        id: "medibook",
+        title: "MediBook",
+        description:
+            "A smart doctor-patient booking system is a digital, web-based, or mobile application designed to streamline scheduling by allowing patients to book, reschedule, or cancel appointments 24/7, reducing manual front-desk work.",
+        image: "/medibook.png",
+        tags: ["React", "Spring Boot", "MySql", "Shadcn", "RazorPay", "JWT"],
+        github: "https://github.com/tapeshchavle/medibook",
+        demo: "https://medibook.tapesh.me/",
         featured: true,
     },
     {
@@ -42,8 +53,8 @@ export const projects: Project[] = [
         image: "/bg-remover.png",
         tags: ["React", "Spring Boot", "Clerk", "MySQL", "Tailwind"],
         github: "https://github.com/tapeshchavle/background-remover",
-        demo: "https://backg-remover.netlify.app/",
-        featured: true,
+        demo: "https://bg-remover.tapesh.me/",
+        featured: false,
     },
     {
         id: "todesktop",
@@ -53,7 +64,7 @@ export const projects: Project[] = [
         image: "/todesktop.png",
         tags: ["Tailwind", "JavaScript", "HTML", "CSS"],
         github: "https://github.com/tapeshchavle/ToDesktop.com",
-        demo: "https://todesktopapp.netlify.app/",
+        demo: "https://todesktop.tapesh.me/",
         featured: false,
     },
     {
@@ -100,6 +111,36 @@ export const projects: Project[] = [
         demo: "#",
         featured: false,
     },
+];
+
+export interface Experience {
+    id: string;
+    role: string;
+    company: string;
+    period: string;
+    duration: string;
+    description: string;
+    achievements: string[];
+    techStack: string[];
+}
+
+export const experiences: Experience[] = [
+    {
+        id: "exp-1",
+        role: "Java Spring Boot Backend Developer Intern",
+        company: "Stealth Startup", // Inferred, user didn't specify
+        period: "July 2025 - Feb 2026",
+        duration: "8 Months",
+        description: "Implemented workflow automation and backend systems from scratch using Spring Boot and Microservices architecture.",
+        achievements: [
+            "Built scalable backend services from the ground up using Java Spring Boot",
+            "Integrated third-party APIs including WATI (WhatsApp) and COMBOT",
+            "Implemented event-driven architecture using Kafka for asynchronous processing",
+            "Optimized data storage and retrieval using Redis caching and PostgreSQL",
+            "Designed and implemented complex workflow automation logic"
+        ],
+        techStack: ["Java", "Spring Boot", "Redis", "Kafka", "PostgreSQL", "WATI", "COMBOT"]
+    }
 ];
 
 export interface SkillNode {
