@@ -102,7 +102,7 @@ export function AboutFragment() {
                                 <span className="text-xs font-mono text-[#00ff88]">AVAILABLE FOR HIRE</span>
                             </div>
                             <div className="flex items-center gap-2 px-4 py-2 glass rounded-full">
-                                <span className="text-xs font-mono text-[#00ffff]">B.TECH 3RD YEAR</span>
+                                <span className="text-xs font-mono text-[#00ffff]">B.TECH 4th YEAR</span>
                             </div>
                         </div>
 
