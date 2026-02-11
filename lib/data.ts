@@ -130,7 +130,7 @@ export const experiences: Experience[] = [
     {
         id: "exp-1",
         role: "Java Spring Boot Backend Developer Intern",
-        company: "Vidyayatan Technologies LLP", // Inferred, user didn't specify
+        company: "Vidyayatan Technologies LLP - Vacademy", // Inferred, user didn't specify
         period: "July 2025 - Feb 2026",
         duration: "8 Months",
         description: "Implemented workflow automation and backend systems from scratch using Spring Boot and Microservices architecture.",
